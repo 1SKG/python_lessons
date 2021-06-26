@@ -85,4 +85,26 @@ elif v == 'W':
 else: 
     res = "neponytnhu* mne slovo:("
 
-print(res)
+# print(res)
+
+# *Пример (Термостас) *
+# Текущая температура помещения 
+current_temp = 25
+
+# Заданое значение диапозон температур 
+min_temp = 10
+max_temp = 25
+
+# параметр "Ludi est /net"
+h = True
+
+# Logiga termostata
+if current_temp <min_temp and  not h:
+    print(f"vkluchon nagrev do {min_temp}")
+elif current_temp <max_temp and h:
+    print(f"vluchen nagrev do {max_temp}")
+    
+else:
+    print("nagrev vukluchen")
+
+
