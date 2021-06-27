@@ -41,6 +41,82 @@ my_list = list(s)
 
 my_slice = my_list[2:]
 my_slice = my_list [2:5]
+# срез с приминением обратной инексации
 
-print(my_list)
-print(my_slice)
+my_slice = my_list[-2:-5:-1]
+
+# Переворот списка 
+
+my_slice = my_list [::-1]
+
+# len() вовзращают длину (количество элементов) коллекция
+
+# print(len(my_list))
+
+# print(my_list)
+# print(my_slice)
+
+# * кортеж (tuple)**
+
+# неизменяемая (imutable) коллекция
+
+# Создание кортежа
+
+my_tuple = (10, 20, 30, 40, 50)
+
+
+# my_tuple[0] = 100
+
+
+# print(my_tuple)
+
+# Чтение значения элементов кортежей
+# print(my_tuple[0])
+
+# Срез 
+# print(my_tuple[2:1])
+
+# Словарь (мутабельный)
+
+#  Пара "Ключ значение"
+#  {Ключ_1:значение_1, ключ_2:Значение_2}
+
+my_dict = {10:3.14, "abc":[1,2,3]}
+
+
+# print(my_dict)
+
+# Чтение значений 
+
+print(my_dict[10])
+print(my_dict["abc"])
+
+data0 = {"name":"John", "age":34, "id":123.5}
+data1 = {"name":"Luk",  "age":32, "id":123.2}
+data2 = {"name":"Rock", "age":31, "id":121.2}
+
+total_data ={"p0":data0, "p1":data1, "p2":data2}
+
+# print(total_data ["p2"]["id"] )
+
+# Изменение значений
+my_dict["abc"] = "string"
+
+
+# Особенность словаря ,при присвоеннием нового значения по не существующему ключу
+# Сохдается новая пара 
+my_dict['A'] = 777
+
+# удаление пары (элемента)
+del my_dict[10]
+
+# print(my_dict)
+# Обновление данных
+data0 = {"name":"John", "age":34, "id":123.4}
+
+data0.update ({"age":35, "id":300, "w":140.5})
+
+print(data0)
+
+
+
