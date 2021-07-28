@@ -88,14 +88,14 @@ my_dict = {10:3.14, "abc":[1,2,3]}
 
 # Чтение значений 
 
-print(my_dict[10])
-print(my_dict["abc"])
+# print(my_dict[10])
+# print(my_dict["abc"])
 
-data0 = {"name":"John", "age":34, "id":123.5}
-data1 = {"name":"Luk",  "age":32, "id":123.2}
-data2 = {"name":"Rock", "age":31, "id":121.2}
+# data0 = {"name":"John", "age":34, "id":123.5}
+# data1 = {"name":"Luk",  "age":32, "id":123.2}
+# data2 = {"name":"Rock", "age":31, "id":121.2}
 
-total_data ={"p0":data0, "p1":data1, "p2":data2}
+# total_data ={"p0":data0, "p1":data1, "p2":data2}
 
 # print(total_data ["p2"]["id"] )
 
@@ -116,7 +116,56 @@ data0 = {"name":"John", "age":34, "id":123.4}
 
 data0.update ({"age":35, "id":300, "w":140.5})
 
-print(data0)
+# Множетсво (set)
 
+# Особенности 
+#  Неупорядочный тип коллекции (Обьекта)
+#  Автоматом удаляет дублирующие обьекты
+
+# Создание пустого множества
+
+my_set =  set()
+
+# Создание наполненного множетсва
+my_set = {10, 20, 30}
+
+# Добавление элемента
+my_set.add(123)
+
+# Когда добавляется значение, которо уже есть во множетсве, то оно удаляется либо не добавляется
+
+my_set.add(30)
+
+# удаленеи элемента
+my_set.remove(20)
+# my_set.remove(40)
+
+my_set.discard(123)
+
+#  Дано Два множества 
+
+w = {"a", "b", "c", 'd'}
+
+z = {'b', 'c', 'q'}
+
+#  Обьединение 
+
+f = w.union(z)
+f = w | z
+
+#  Пересечение 
+f = w.intersection(z)
+f = w & z
+
+# Разность 
+
+f = w.difference(z)
+f = z.difference(w)
+f = w.symmetric_difference(z)
+#  коротакая запись difference
+f = w - z
+#  самостоятольно по изучать оставшийся методы
+#  Рассмотреть модуль collections
+print(f)
 
 
